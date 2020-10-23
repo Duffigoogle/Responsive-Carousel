@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Navbar, Form, FormControl, Button } from 'react-bootstrap';
+import { FaSearch } from 'react-icons/fa';
 
 
 
@@ -8,9 +9,15 @@ class Nav extends React.Component {
         return (
             <Container>
                 <Navbar expand='lg' variant='light' bg='light'>
-                        <Navbar.Brand href='#'>Trippa</Navbar.Brand>
+                        <Navbar.Brand href='#'><h2><u>Trippa</u><span>Shots</span></h2></Navbar.Brand>
+                        <Form inline>
+                            <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
+                            <Button type="submit"> <FaSearch /> </Button>
+                        </Form>
                 </Navbar>
                 {/* Add social media icons */}
+                {/* FcSearch */}
+                
             </Container>    
         );
     };
@@ -21,10 +28,6 @@ function Header() {
         <div>
             <Nav />
             <h1>TrippaShots</h1>
-            {/* Search Form */}
-            {/* Navigation */}
-            {/* Carousel */}
-            {/* Gallery */}
         </div>
     );
 }

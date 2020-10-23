@@ -11,7 +11,7 @@ function CarouselComp() {
     return (
         <div>
             <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
+                <Carousel.Item interval={1000}>
                     <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=First slide&bg=373940"
@@ -22,7 +22,7 @@ function CarouselComp() {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item interval={800}>
                     <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=Second slide&bg=282c34"
@@ -34,7 +34,7 @@ function CarouselComp() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item interval={500}>
                     <img
                         className="d-block w-100"
                         src="holder.js/800x400?text=Third slide&bg=20232a"
