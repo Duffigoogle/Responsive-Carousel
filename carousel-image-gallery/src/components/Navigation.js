@@ -1,12 +1,6 @@
 import React from 'react';
 // import { Nav } from 'react-bootstrap';
 import { NavLink, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link
-//   } from "react-router-dom";
 
 
 function Navigation() {
@@ -34,7 +28,7 @@ function Navigation() {
                         <Route path='/parks'> <Parks /> </Route>
                         <Route path='/museums'> <Museums/> </Route>
                         <Route path='/food'> <Food /></Route>
-                        <Route > <NotFound /></Route>
+                        <Route path='*'> <NotFound /></Route>
                     </Switch>
         </Router>
     );
@@ -46,6 +40,7 @@ function Places() {
     return (
         <div>
             <h2>Places</h2>
+            {/* <Gallery title='PLACES' fetchURL={} /> */}
         </div>
     );
 }
