@@ -1,2 +1,5 @@
-# Responsive-Carousel
-A sample project to make responsive carousel using React and Bootstrap
+#TRIPPASHOT
+
+A practice project to build a responsive image gallery using **Reactjs** and **Bootstrap**
+### Used React hooks
+### Effectively applied React API fetch using **axios**
