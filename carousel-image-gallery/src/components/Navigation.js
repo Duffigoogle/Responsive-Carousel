@@ -15,7 +15,7 @@ function Navigation() {
                     </Nav> */}
                     <nav className='nav-top'>
                         <ul>
-                            <li><NavLink to="/">Places</NavLink></li>
+                            <li><NavLink to="/">Recent</NavLink></li>
                             <li><NavLink to="/beaches">Beaches</NavLink></li>
                             <li><NavLink to="/parks">Parks</NavLink></li>
                             <li><NavLink to="/museums">Museums</NavLink></li>
@@ -23,7 +23,7 @@ function Navigation() {
                         </ul>
                     </nav>
                     <Switch>
-                        <Route exact path='/'> <Places />  </Route>
+                        <Route exact path='/'> <Recent />  </Route>
                         <Route path='/beaches'> <Beaches /> </Route>
                         <Route path='/parks'> <Parks /> </Route>
                         <Route path='/museums'> <Museums/> </Route>
@@ -36,10 +36,10 @@ function Navigation() {
 
 export default Navigation
 
-function Places() {
+function Recent() {
     return (
         <div>
-            <h2>Places</h2>
+            <h2>Recent pictures</h2>
             {/* <Gallery title='PLACES' fetchURL={} /> */}
         </div>
     );
@@ -48,7 +48,7 @@ function Places() {
 function Beaches() {
     return (
         <div>
-            <h2>Places</h2>
+            <h2>Beach pictures</h2>
         </div>
     );
 }
@@ -56,7 +56,7 @@ function Beaches() {
 function Parks() {
     return (
         <div>
-            <h2>Places</h2>
+            <h2>Park pictures</h2>
         </div>
     );
 }
@@ -64,7 +64,7 @@ function Parks() {
 function Museums() {
     return (
         <div>
-            <h2>Places</h2>
+            <h2>Museums pictures</h2>
         </div>
     );
 }
@@ -72,7 +72,7 @@ function Museums() {
 function Food() {
     return (
         <div>
-            <h2>Places</h2>
+            <h2>Food pictures</h2>
         </div>
     );
 }

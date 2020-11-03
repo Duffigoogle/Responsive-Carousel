@@ -38,7 +38,7 @@ h1 {
   text-align: center;
 }
 
-h2 span {
+h5 span {
   color: red;
   font-weight: 800;
   font-style: italic;
@@ -89,3 +89,48 @@ h2 span {
 .nav-top a:hover {
   background: #041c33;
 }
+
+h1 span {
+  color: red;
+  font-weight: 800;
+  font-style: italic;
+  font-family: cursive, Geneva, Tahoma, sans-serif;
+}
+.carousel-container {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.gallery-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.photo-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.photo-container ul li {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.photo-container ul img {
+  width: 100%;
+  transform: scale(1.25);
+  transition: transform 1.25s;
+}
+
+/* .photo-container li:hover img {
+  transform: scale(1.65);
+}
+
+.photo-container .not-found {
+  width: 100%;
+} */
