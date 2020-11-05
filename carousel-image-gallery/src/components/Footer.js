@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
-            <p> Designed by Duffigoogle &copy 2020.</p>
+        <div className='footer'>
+            <p className='footer-content'> Designed by <i>Duffigoogle</i> &copy; 2020.</p>
         </div>
     )
 }

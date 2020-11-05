@@ -138,3 +138,11 @@ h1 span {
 .photo-container .not-found {
   width: 100%;
 } */
+.footer {
+  background-color: rgba(240, 233, 233, 0.8);
+  height: 40px;
+}
+
+.footer-content {
+  padding-top: 10px;
+}
