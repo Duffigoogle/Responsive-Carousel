@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Navbar } from 'react-bootstrap';
 
 function Footer() {
     return (
         <div className='footer'>
-            <p className='footer-content'> Designed by <i>Duffigoogle</i> &copy; 2020.</p>
+            <Navbar bg='light' className='justify-content-center'>
+                <Navbar.Brand>
+                    <h6 className='footer-content'> Designed by <u><i>Duffigoogle</i></u> &copy;2020.</h6>
+                </Navbar.Brand>
+            </Navbar>
+            
         </div>
     )
 }
