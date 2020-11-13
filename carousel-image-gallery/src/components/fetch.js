@@ -18,6 +18,7 @@ function FetchGallery() {
     const getFlickrImagesWithAxios = async () => {
         const response = await axios.get(flickrURL);
         setPhotos(response.data.photos.photo);
+        // console.log(photos);
         setIsLoaded(true);
     } 
 
@@ -96,7 +97,7 @@ function FetchGallery() {
                     />
                 </div>
                 <ul>
-                    {photos.photo.map(photo => (
+                    {photos.map(photo => (
                         <li key={photo.id}>
                         </li>
                     ))}

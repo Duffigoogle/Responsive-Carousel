@@ -1,10 +1,10 @@
 import React, {useState, useEffect } from 'react';
 import axios from 'axios';
-// import Image from './Image';
+import Image from './Image';
 // import NoPhotos from 'NoPhotos';
 // import apikey   from './key'; 
 
-const flickrURL = 'https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=67d150af20c69717508c11adeeca0670&per_page=12&format=json&nojsoncallback=1';
+const flickrURL = 'https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=67d150af20c69717508c11adeeca0670&per_page=16&format=json&nojsoncallback=1';
 
 // 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1';
 
@@ -15,7 +15,7 @@ function FetchGallery() {
     const [photos, setPhotos] = useState([]);
     // const [isLoaded, setIsLoaded] = useState(false);
     // const [error, setError] = useState(null);
-    const [query, setQuery] = useState("");
+    // const [query, setQuery] = useState("");
   
     const getFlickrImagesWithAxios = async () => {
         const response = await axios.get(flickrURL);
@@ -90,15 +90,15 @@ function FetchGallery() {
 
     // map variables to each item in fetched image array and return image component
     if (photos.length > 0) {
-      itemsToRender = photos.map(photo => {
+      itemsToRender = photos.map(photo => { 
         let farm = photo.farm;
         let server = photo.server;
         let id = photo.id;
         let secret = photo.secret;
         let title = photo.title;
         let url = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_m.jpg`;
-        return <img src={url} key={id} alt={title} />
-        // <Image url={url} key={id} alt={title} />;
+        return <Image url={url} key={id} alt={title} />;
+        // <img src={url} key={id} alt={title} />
       });
     } else {
         itemsToRender = "Loading ...";
@@ -106,8 +106,8 @@ function FetchGallery() {
     }
     return (
         
-        <div>
-                <div className="input-wrapper">
+        <div className='photo-container'>
+                {/* <div className="input-wrapper">
                 <input 
                     type="text" 
                     placeholder="Search for an image"
@@ -115,7 +115,7 @@ function FetchGallery() {
                     onChange={e => 
                         setQuery(e.target.value)}
                 />
-                </div>
+                </div> */}
                 <ul>{itemsToRender}</ul>
             {/* <ul>
                 {photos.photo.map(photo => (

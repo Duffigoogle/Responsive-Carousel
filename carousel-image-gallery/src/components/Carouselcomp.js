@@ -10,6 +10,7 @@ function CarouselComp() {
 
     return (
         <div className='carousel-container'>
+            <h1 style={{ marginTop: '35px', }}>Trippa<span>Shots</span></h1>
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item interval={1200} style={{'height':"500px"}}>
                     <img

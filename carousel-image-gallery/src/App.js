@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 // import FetchGallery from './components/FetchGallery';
 import Search from './components/Search';
 import Container from './components/Container';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Navigation />
       <Search />
       <Container />
+      <Footer />
       {/* <GalleryFetch /> */}
     </div>
   );
